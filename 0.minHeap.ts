@@ -59,7 +59,7 @@ class minHeap {
     this.siftUp(this.data.length - 1, this.data.length)
   }
 }
-// let test = new minHeap([1,10,9,22,31,15,40,25,91])
+// let test = new minHeap([1,9,10,22,31,15,40,25,91])
 // console.log(test.data)
 // test.shift()
 // console.log(test.data)

@@ -14,6 +14,15 @@ function change(amount: number, coins: number[]): number {
         dp[j] += dp[j - coins[i]]
       }
     }
+    // for (let j = 0; j <= amount; j++){
+    //   for (let i = 0; i < coins.length; i++)  {
+    //     if (j - coins[i] >= 0) {
+    //       console.log('当前容量：', j, '当前硬币:', coins[i])
+    //       console.log('放入后增加方法数', dp[j - coins[i]], '原来方法数', dp[j])
+    //       dp[j] += dp[j - coins[i]]
+    //     }
+    //   }
+    // }
     return dp[amount]
 };
 change(5,[1, 2, 5])
